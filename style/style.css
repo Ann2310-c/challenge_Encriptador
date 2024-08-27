@@ -45,6 +45,7 @@ main{
     border-radius: var(--borde);
     text-transform: lowercase; /*transformar text a min*/
     font-family: "Inter", sans-serif;
+    padding: 10px;
 }
 ::placeholder{ color: var(--primary-color);}
 .text_area:focus{
@@ -120,4 +121,8 @@ main{
     font-family: "Inter", sans-serif;
     color: darkgrey;
     font-size: 18px;
+}
+
+.alerta p{
+    display: inline;
 }
