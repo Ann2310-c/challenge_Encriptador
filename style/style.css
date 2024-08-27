@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap');
+:root {
+    --main-color: #F4D9D0;
+    --primary-color: #C75B7A;
+    --secondary-color: #921A40;
+    --background-color: rgb(255, 179, 191);
+    --fuente: "Pacifico", cursive, sans-serif;
+    --borde: 24px;
+    --btn-altura: 67px;
+    --btn-anchura: 280px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: var(--fuente);
+}
+body{
+    background-color: var(--main-color);
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.titulo{
+    color: var(--primary-color);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    background-image: url("/style/img/Logo.png"),url("/style/img/cat.png"), url("/style/img/cat.png");
+    background-repeat: no-repeat;
+    background-position: left, 300px, 960px;
+    background-size: 7%,contain,contain;
+}
+.text_area{
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: var(--borde);
+    text-transform: lowercase; /*transformar text a min*/
+    font-family: "Inter", sans-serif;
+}
+::placeholder{ color: var(--primary-color);}
+.text_area:focus{
+    outline: none;
+}
+
+.text_mensaje{
+    background-color: var(--background-color);
+    line-height: 140%;
+    background-image: url("/style/img/Muñeco2.jpeg");
+    background-size: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: var(--borde);
+    margin-left: 20px;
+    color: var(--primary-color);
+    border: none;
+    font-family: "Inter", sans-serif;
+}
+.text_mensaje:focus{
+    outline: none;
+}
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+.btn_encriptar{
+    background-image: url("/style/img/encriptar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 5%;
+    background-color: var(--primary-color);
+    border: 1px solid black;
+    border-radius: var(--borde);
+    color: var(--secondary-color);
+    cursor: pointer;
+    height: var(--btn-altura);
+    width: var(--btn-anchura);
+    font-size: 22px;
+}
+.btn_desencriptar{
+    background-image: url("/style/img/desencriptar.png");
+    background-size: 16%;
+    background-repeat: no-repeat;
+    background-position: 5%;
+    background-color: var(--primary-color);
+    border: 1px solid black;
+    border-radius: var(--borde);
+    color: var(--secondary-color);
+    cursor: pointer;
+    height: var(--btn-altura);
+    width: var(--btn-anchura);
+    margin-left: 50px;
+    font-size: 22px;
+}
+.btn_copiar{
+    background-image: url("/style/img/copiar.png");
+    background-size: 16%;
+    background-repeat: no-repeat;
+    background-position: 5%;
+    background-color: var(--primary-color);
+    border: 1px solid black;
+    border-radius: var(--borde);
+    color: var(--secondary-color);
+    cursor: pointer;
+    margin-left: 140px;
+    margin-top: 10px;
+    height: var(--btn-altura);
+    width: var(--btn-anchura);
+    font-size: 25px;
+}
+.informacion{
+    font-family: "Inter", sans-serif;
+    color: darkgrey;
+    font-size: 18px;
+}
