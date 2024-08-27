@@ -117,12 +117,9 @@ main{
     width: var(--btn-anchura);
     font-size: 25px;
 }
-.informacion{
-    font-family: "Inter", sans-serif;
-    color: darkgrey;
-    font-size: 18px;
-}
 
 .alerta p{
     display: inline;
+    color: darkgrey;
+    font-size: 18px;
 }
